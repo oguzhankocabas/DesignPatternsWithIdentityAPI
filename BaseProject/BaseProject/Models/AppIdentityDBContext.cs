@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BaseProject.Models
 {
-    public class AppIdentityDBContext : IdentityDbContext
+    public class AppIdentityDBContext : IdentityDbContext<AppUser>
     {
         public AppIdentityDBContext(DbContextOptions<AppIdentityDBContext> options) : base(options)
         {
